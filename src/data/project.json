@@ -1,0 +1,23 @@
+[
+    {
+        "image":"images/image 1.png",
+        "title":"Project A",
+        "descrip":"This is a project made tolearn the latest languagesby building an app.",
+        "techStack":["React","NodeJs","MongoDB"],
+        "btn":["Source","Demo"]
+    },
+    {
+        "image":"images/image 1.png",
+        "title":"Project A",
+        "descrip":"This is a project made tolearn the latest languagesby building an app.",
+        "techStack":["React","NodeJs","MongoDB"],
+        "btn":["Source","Demo"]
+    },
+    {
+        "image":"images/image 1.png",
+        "title":"Project A",
+        "descrip":"This is a project made tolearn the latest languagesby building an app.",
+        "techStack":["React","NodeJs","MongoDB"],
+        "btn":["Source","Demo"]
+    }
+]

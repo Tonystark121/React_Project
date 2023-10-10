@@ -1,0 +1,116 @@
+@import '../vars.css';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:0 10%;
+    margin-top: 120px;
+}
+.title{
+    font-size: 30px;
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    color:var(--clr-text);
+}
+.content{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    width:100%;
+    z-index: 2;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items_content{
+    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    box-shadow: 0 16px 14px #04152d;
+    width:27%;
+    height:20%;
+    padding:20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.items_content img{
+    height:180px;
+    width:260px;
+    width:100%;
+}
+.item{
+    color:var(--clr-text);
+    margin-top:10px;
+}
+.item h3{
+    font-weight: 600;
+}
+.item p{
+   margin-top: 7px;
+   font-size: 18px;
+}
+.tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:10px;
+    flex-wrap: wrap;
+}
+.tech span{
+    background: var(--clr-dark);
+    padding:7px;
+    border-radius: 20px;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+.btn button{
+    padding: 10px 18px;
+    font-size: 20px;
+    background: var(--clr-pri);
+    color:var(--clr-text);
+    font-weight: 600;
+    border:none;
+    border-radius: 20px;
+    gap:11px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:830px) {
+    .content{
+        flex-direction: column;
+    }
+     .items{
+        flex-direction: column;
+        align-items: center;
+     }  
+     .items_content{
+        width:60%;
+        align-items: center;
+        margin-bottom: 16px;
+     } 
+     .items_content img{
+        width:100%;
+     }
+     .tech span{
+        margin-bottom:12px;
+     }
+}

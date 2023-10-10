@@ -1,0 +1,114 @@
+@import '../vars.css';
+
+.container{
+    position: relative;
+    top:65px;
+    display: flex;
+    flex-direction: column;
+    margin:0 10%;
+}
+.title{
+    font-size: 30px;
+    color:var(--clr-text);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:30px 0 8px 45px;
+    letter-spacing: 1.75px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:14px;
+}
+.skill{
+    width:40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:31px;
+}
+.skill_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:11px;
+}
+.image{
+    background-color: var(--clr-sec);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+}
+.image img{
+    width:80px;
+}
+.skill_items p{
+    color:var(--clr-text);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+}
+.items{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:17px;
+    background: #19376d;
+    background: linear-gradient(90deg,#19376d 0%,rgba(25,55,109,0)100%);
+    border-radius: 10px;
+    padding:14px;
+}
+.item img{
+    width:80px;
+    height:80px;
+    border-radius: 20px;
+}
+.item_content{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-roboto);
+}
+.item_content h3{
+    font-size: 22px;
+    font-weight: 500px;
+    color:var(--clr-text);
+}
+.item_content p{
+    font-size: 17px;
+    font-weight: 300px;
+    color:var(--clr-text);
+}
+.item_content ul{
+    color:var(--clr-text);
+    margin-top:6px;
+    list-style-position: inside;
+    font-size: 19px;
+    list-style-type: disc;
+    margin-left: 17px;
+}
+
+@media screen and (max-width:830px) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill{
+        width:80%;
+    }
+    .skill_items{
+        gap:20px;
+    }
+    .items{
+        margin-top:30px;
+        width:80%;
+    }
+}
